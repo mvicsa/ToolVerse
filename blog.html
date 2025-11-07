@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolVerse</title>
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-bar">
+      <div class="container container-custom">
+        <!-- Navbar Container -->
+        <div class="nav-bar-container">
+          <button class="btn btn-nav btn-padding me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <img src="assets/img/logo-dark.svg" alt="ToolVerse" />
+          </a>
+          <!-- /Logo -->
+          <!-- Navbar Menu -->
+          <div class="nav-bar-menu">
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <!-- /Overlay -->
+            <!-- Navbar Menu Inner -->
+            <div class="nav-bar-menu-inner">
+              <div class="nav-bar-menu-header">
+                <a class="nav-bar-menu-close ms-auto">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <!-- Navbar Links -->
+              <div class="nav-bar-links">
+                <!-- Link -->
+                <a href="/" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Home</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="blog.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Blog</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="contact.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Contact Us</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Dropdown -->
+                <div class="drop-down" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <span>More</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <span>Privacy policy</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="terms.html" class="drop-down-item">
+                      <span>Terms of use</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Dropdown -->
+                <!-- Languages -->
+                <div class="drop-down languages" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <div class="language-img">
+                      <img src="assets/img/flags/en-us.png">
+                    </div>
+                    <span>English</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px; bottom: auto;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <div class="language-img">
+                        <img src="assets/img/flags/ar.png">
+                      </div>
+                      Arabic
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item active">
+                      <div class="language-img">
+                        <img src="assets/img/flags/en-us.png">
+                      </div>
+                      English
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Languages -->
+              </div>
+              <!-- /Navbar Links -->
+              <!-- Navbar Buttons -->
+              <div class="nav-bar-buttons">
+                <!-- Link -->
+                <a href="login.html" class="link-btn">
+                  <button class="btn btn-outline-secondary px-3">
+                    <i class="bi bi-send-fill me-1"></i>
+                    Submit a Tool
+                  </button>
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="reg.html" class="link-btn">
+                  <button class="btn btn-primary px-3">
+                    <i class="bi bi-person-plus-fill me-1"></i>
+                    Sign Up
+                  </button>
+                </a>
+                <!-- /Link -->
+              </div>
+              <!-- /Navbar Buttons -->
+            </div>
+            <!-- /Navbar Menu Inner -->
+          </div>
+          <!-- /Navbar Menu -->
+          <!-- Navbar Actions -->
+          <div class="nav-bar-actions">
+            <!-- Navbar Menu Btn -->
+            <div class="nav-bar-menu-btn ms-3">
+              <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+            <!-- /Navbar Menu Btn -->
+          </div>
+          <!-- /Navbar Actions -->
+        </div>
+        <!-- /Navbar Container -->
+      </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Categories Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="categories-list">
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                WordPress
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                PHP Scripts
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                HTML Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                CSS Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Andriod Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                IOS Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Graphics
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Categories Menu -->
+    <!-- Header -->
+    <header class="header header-auto header-bg">
+      <div class="header-bg-img" style="background-image: url(/assets/img/header-pattern.png);"></div>
+      <div class="container container-custom d-flex flex-column flex-grow-1">
+        <div class="header-inner text-start">
+          <div class="row row-cols-1 row-cols-sm-auto justify-content-between align-items-center g-4">
+            <div class="col">
+              <nav class="mb-3 small" aria-label="breadcrumb">
+                <ol class="breadcrumb custom" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+              </nav>
+              <h1 class="header-title mb-0" data-aos="fade-right" data-aos-duration="1000">
+                Blog
+              </h1>
+            </div>
+            <div class="col-md-5 col-lg-4 col-xxl-3">
+              <form action="">
+                <div class="form-search form-search-reverse">
+                  <button class="icon">
+                    <i class="bi bi-search"></i>
+                  </button>
+                  <input type="text" placeholder="Search..." class="form-control form-control-md">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+    <!-- Section -->
+    <section class="section">
+      <div class="container container-custom">
+        <div class="section-body">
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-3">
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="blog-post">
+                  <img src="assets/img/blog.jpg" class="w-100 blog-post-img" alt="blog-post Image">
+                  <div class="blog-post-body p-3">
+                    <div class="blog-post-meta mb-2">
+                      MARCH 3, 2022 | <a href="#" class="text-decoration-underline">AI Tool</a>
+                    </div>
+                    <a href="#" class="blog-post-title">
+                      Cycode Workflows: No-Code Automated Alerting &amp; Remediation
+                    </a>
+                    <p class="blog-post-desc">Cycode workflows allow users to automate security functions such as alerting, ticketing, and remediation...</p>
+                    <a href="#" class="read-link">Read More →</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <nav aria-label="Page navigation">
+              <ul class="pagination pagination-md">
+                <li class="page-item" disabled="">
+                  <a class="page-link" href="#" aria-label="Previous" aria-disabled="true">
+                    <span aria-hidden="true">
+                      <i class="fa fa-angle-left"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Section -->
+    <section class="section section-subscribe">
+      <div class="container container-custom">
+        <div class="section-inner">
+          <div class="section-body">
+            <div class="subscribe">
+              <div class="row g-3">
+                <div class="col-12 col-md-7">
+                  <h2 class="subscribe-title" data-aos="fade-up" data-aos-duration="1000">
+                    Subscribe to Our Newsletter
+                  </h2>
+                  <p class="subscribe-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    Stay tuned for the latest and greatest items and offers, delivered right to your inbox!
+                  </p>
+                  <div class="input-group input-group-absolute" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Username" aria-describedby="input-group-button-right">
+                    <button type="button" class="btn btn-primary btn-md" id="input-group-button-right">
+                      Subscribe
+                      <i class="bi bi-send-fill ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer Upper -->
+      <div class="footer-upper">
+        <div class="container container-custom">
+          <div class="row g-5">
+            <div class="col-12 col-lg-5">
+              <a href="#" class="logo h3 mb-4 fw-700" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/logo-light.svg" alt="ToolVerse" />
+              </a>
+              <p class="footer-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptatem
+                sed doloremque ipsam eius perspiciatis, repellendus, odit, voluptates iusto
+                reprehenderit ipsa qui! Quaerat deleniti, numquam odio ad amet nihil.
+              </p>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <h6>Follow Us:</h6>
+                <div class="socials">
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="row row-cols-auto align-items-center g-4">
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">4,321</p>
+                      <h6 class="footer-counter-title">Items Sold</h6>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">$7,654,352</p>
+                      <h6 class="footer-counter-title">Authors Earnings</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="col-12 col-lg-7">
+              <div class="row row-cols-2 row-cols-sm-3 g-5">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Company</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="/" class="footer-text">
+                        Home
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Blog
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Contact Us
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Informations</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Partners
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Pricing
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Reviews
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        API
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Other</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Terms of Use
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        DMCA
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Upper -->
+      <!-- Footer Lower -->
+      <div class="footer-lower">
+        <div class="container container-custom">
+          <div class="row row-cols-1 row-cols-sm-auto align-items-center justify-content-between g-3">
+            <div class="col">
+              <!-- Footer Copyright -->
+              <p class="footer-copyright small mb-0">
+                Copyrights @ <span data-year="">2025</span>. Made With ❤️ By Mohamed Abdelqader & Sohaila Mohamed
+              </p>
+              <!-- /Footer Copyright -->
+            </div>
+            <div class="col">
+              <div class="footer-payment">
+                <img src="assets/img/payments/payments.png" alt="payments">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Lower -->
+    </footer>
+    <!-- /Footer -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

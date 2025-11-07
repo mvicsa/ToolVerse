@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolVerse</title>
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-bar v2">
+      <div class="container container-custom">
+        <!-- Navbar Container -->
+        <div class="nav-bar-container">
+          <button class="btn btn-nav btn-padding me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <img src="assets/img/logo-dark.svg" alt="ToolVerse" />
+          </a>
+          <!-- /Logo -->
+          <!-- Navbar Menu -->
+          <div class="nav-bar-menu">
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <!-- /Overlay -->
+            <!-- Navbar Menu Inner -->
+            <div class="nav-bar-menu-inner">
+              <div class="nav-bar-menu-header">
+                <a class="nav-bar-menu-close ms-auto">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <!-- Navbar Links -->
+              <div class="nav-bar-links">
+                <!-- Link -->
+                <a href="/" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Home</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="blog.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Blog</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="contact.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Contact Us</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Dropdown -->
+                <div class="drop-down" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <span>More</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <span>Privacy policy</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="terms.html" class="drop-down-item">
+                      <span>Terms of use</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Dropdown -->
+                <!-- Languages -->
+                <div class="drop-down languages" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <div class="language-img">
+                      <img src="assets/img/flags/en-us.png">
+                    </div>
+                    <span>English</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px; bottom: auto;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <div class="language-img">
+                        <img src="assets/img/flags/ar.png">
+                      </div>
+                      Arabic
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item active">
+                      <div class="language-img">
+                        <img src="assets/img/flags/en-us.png">
+                      </div>
+                      English
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Languages -->
+              </div>
+              <!-- /Navbar Links -->
+              <!-- Navbar Buttons -->
+              <div class="nav-bar-buttons">
+                <!-- Link -->
+                <a href="login.html" class="link-btn">
+                  <button class="btn btn-outline-secondary px-3">
+                    <i class="bi bi-send-fill me-1"></i>
+                    Submit a Tool
+                  </button>
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="reg.html" class="link-btn">
+                  <button class="btn btn-primary px-3">
+                    <i class="bi bi-person-plus-fill me-1"></i>
+                    Sign Up
+                  </button>
+                </a>
+                <!-- /Link -->
+              </div>
+              <!-- /Navbar Buttons -->
+            </div>
+            <!-- /Navbar Menu Inner -->
+          </div>
+          <!-- /Navbar Menu -->
+          <!-- Navbar Actions -->
+          <div class="nav-bar-actions">
+            <!-- Navbar Menu Btn -->
+            <div class="nav-bar-menu-btn ms-3">
+              <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+            <!-- /Navbar Menu Btn -->
+          </div>
+          <!-- /Navbar Actions -->
+        </div>
+        <!-- /Navbar Container -->
+      </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Categories Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="categories-list">
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                WordPress
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                PHP Scripts
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                HTML Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                CSS Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Andriod Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                IOS Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Graphics
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Categories Menu -->
+    <!-- Section -->
+    <section class="section">
+      <div class="container container-custom">
+        <div class="section-inner">
+          <div class="section-body">
+            <div class="sign sign-lg">
+              <div class="box">
+                <div class="mb-4">
+                  <h2 class="sign-title">Sign Up</h2>
+                  <p class="sign-text">Enter your details to create an account.</p>
+                </div>
+                <form action="">
+                  <div class="row row-cols-1 g-3">
+                    <div class="col">
+                      <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                          <label class="form-label">First Name</label>
+                          <input type="text" class="form-control form-control-md" placeholder="First Name">
+                        </div>
+                        <div class="col">
+                          <label class="form-label">Last Name</label>
+                          <input type="text" class="form-control form-control-md" placeholder="Last Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" class="form-control form-control-md" placeholder="Email Address">
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Password</label>
+                      <input type="password" class="form-control form-control-md" placeholder="Password">
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control form-control-md" placeholder="Confirm Password">
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
+                        <label class="form-check-label small" for="formCheckDefault">
+                          Agree to our 
+                          <a href="#">Terms of Use</a>
+                          and <a href="#">Privacy Policy</a>.
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-primary btn-md w-100">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="login-with mt-3">
+                  <div class="login-with-divider">
+                    <span>Or With</span>
+                  </div>
+                  <div class="row row-cols-1 row-cols-sm-2 g-3">
+                    <div class="col">
+                      <a href="#" class="btn btn-social btn-md w-100 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 509 509"><g fill-rule="nonzero"><path fill="#0866FF" d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z"></path><path fill="#fff" d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z"></path></g></svg>
+                        Facebook
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#" class="btn btn-social btn-md w-100 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326667 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M326667 170370c0-13704-1112-23704-3518-34074H166667v61851h91851c-1851 15371-11851 38519-34074 54074l-311 2071 49476 38329 3428 342c31481-29074 49630-71852 49630-122593m0 0z" fill="#4285f4"></path><path d="M166667 333333c44999 0 82776-14815 110370-40370l-52593-40742c-14074 9815-32963 16667-57777 16667-44074 0-81481-29073-94816-69258l-1954 166-51447 39815-673 1870c27407 54444 83704 91852 148890 91852z" fill="#34a853"></path><path d="M71851 199630c-3518-10370-5555-21482-5555-32963 0-11482 2036-22593 5370-32963l-93-2209-52091-40455-1704 811C6482 114444 1 139814 1 166666s6482 52221 17777 74814l54074-41851m0 0z" fill="#fbbc04"></path><path d="M166667 64444c31296 0 52406 13519 64444 24816l47037-45926C249260 16482 211666 1 166667 1 101481 1 45185 37408 17777 91852l53889 41853c13520-40185 50927-69260 95001-69260m0 0z" fill="#ea4335"></path></svg>
+                        Google
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Section -->
+    <section class="section section-subscribe">
+      <div class="container container-custom">
+        <div class="section-inner">
+          <div class="section-body">
+            <div class="subscribe">
+              <div class="row g-3">
+                <div class="col-12 col-md-7">
+                  <h2 class="subscribe-title" data-aos="fade-up" data-aos-duration="1000">
+                    Subscribe to Our Newsletter
+                  </h2>
+                  <p class="subscribe-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    Stay tuned for the latest and greatest items and offers, delivered right to your inbox!
+                  </p>
+                  <div class="input-group input-group-absolute" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Username" aria-describedby="input-group-button-right">
+                    <button type="button" class="btn btn-primary btn-md" id="input-group-button-right">
+                      Subscribe
+                      <i class="bi bi-send-fill ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer Upper -->
+      <div class="footer-upper">
+        <div class="container container-custom">
+          <div class="row g-5">
+            <div class="col-12 col-lg-5">
+              <a href="#" class="logo h3 mb-4 fw-700" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/logo-light.svg" alt="ToolVerse" />
+              </a>
+              <p class="footer-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptatem
+                sed doloremque ipsam eius perspiciatis, repellendus, odit, voluptates iusto
+                reprehenderit ipsa qui! Quaerat deleniti, numquam odio ad amet nihil.
+              </p>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <h6>Follow Us:</h6>
+                <div class="socials">
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="row row-cols-auto align-items-center g-4">
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">4,321</p>
+                      <h6 class="footer-counter-title">Items Sold</h6>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">$7,654,352</p>
+                      <h6 class="footer-counter-title">Authors Earnings</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="col-12 col-lg-7">
+              <div class="row row-cols-2 row-cols-sm-3 g-5">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Company</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="/" class="footer-text">
+                        Home
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Blog
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Contact Us
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Informations</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Partners
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Pricing
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Reviews
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        API
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Other</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Terms of Use
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        DMCA
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Upper -->
+      <!-- Footer Lower -->
+      <div class="footer-lower">
+        <div class="container container-custom">
+          <div class="row row-cols-1 row-cols-sm-auto align-items-center justify-content-between g-3">
+            <div class="col">
+              <!-- Footer Copyright -->
+              <p class="footer-copyright small mb-0">
+                Copyrights @ <span data-year="">2025</span>. Made With ❤️ By Mohamed Abdelqader & Sohaila Mohamed
+              </p>
+              <!-- /Footer Copyright -->
+            </div>
+            <div class="col">
+              <div class="footer-payment">
+                <img src="assets/img/payments/payments.png" alt="payments">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Lower -->
+    </footer>
+    <!-- /Footer -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

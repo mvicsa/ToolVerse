@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolVerse</title>
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-bar v2">
+      <div class="container container-custom">
+        <!-- Navbar Container -->
+        <div class="nav-bar-container">
+          <button class="btn btn-nav btn-padding me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <!-- Logo -->
+          <a href="/" class="logo">
+            <img src="assets/img/logo-dark.svg" alt="ToolVerse" />
+          </a>
+          <!-- /Logo -->
+          <!-- Navbar Menu -->
+          <div class="nav-bar-menu">
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <!-- /Overlay -->
+            <!-- Navbar Menu Inner -->
+            <div class="nav-bar-menu-inner">
+              <div class="nav-bar-menu-header">
+                <a class="nav-bar-menu-close ms-auto">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <!-- Navbar Links -->
+              <div class="nav-bar-links">
+                <!-- Link -->
+                <a href="/" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Home</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="blog.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Blog</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="contact.html" class="link">
+                  <!-- Link Title -->
+                  <div class="link-title">
+                    <span>Contact Us</span>
+                  </div>
+                  <!-- /Link Title -->
+                </a>
+                <!-- /Link -->
+                <!-- Dropdown -->
+                <div class="drop-down" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <span>More</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <span>Privacy policy</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="terms.html" class="drop-down-item">
+                      <span>Terms of use</span>
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Dropdown -->
+                <!-- Languages -->
+                <div class="drop-down languages" data-dropdown>
+                  <!-- Link Title -->
+                  <div class="drop-down-btn">
+                    <div class="language-img">
+                      <img src="assets/img/flags/en-us.png">
+                    </div>
+                    <span>English</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
+                  </div>
+                  <!-- /Link Title -->
+                  <!-- Dropdown Menu -->
+                  <div class="drop-down-menu" style="top: 40px; bottom: auto;">
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item">
+                      <div class="language-img">
+                        <img src="assets/img/flags/ar.png">
+                      </div>
+                      Arabic
+                    </a>
+                    <!-- /Dropdown Item -->
+                    <!-- Dropdown Item -->
+                    <a href="#" class="drop-down-item active">
+                      <div class="language-img">
+                        <img src="assets/img/flags/en-us.png">
+                      </div>
+                      English
+                    </a>
+                    <!-- /Dropdown Item -->
+                  </div>
+                  <!-- /Dropdown Menu -->
+                </div>
+                <!-- /Languages -->
+              </div>
+              <!-- /Navbar Links -->
+              <!-- Navbar Buttons -->
+              <div class="nav-bar-buttons">
+                <!-- Link -->
+                <a href="login.html" class="link-btn">
+                  <button class="btn btn-outline-secondary px-3">
+                    <i class="bi bi-send-fill me-1"></i>
+                    Submit a Tool
+                  </button>
+                </a>
+                <!-- /Link -->
+                <!-- Link -->
+                <a href="reg.html" class="link-btn">
+                  <button class="btn btn-primary px-3">
+                    <i class="bi bi-person-plus-fill me-1"></i>
+                    Sign Up
+                  </button>
+                </a>
+                <!-- /Link -->
+              </div>
+              <!-- /Navbar Buttons -->
+            </div>
+            <!-- /Navbar Menu Inner -->
+          </div>
+          <!-- /Navbar Menu -->
+          <!-- Navbar Actions -->
+          <div class="nav-bar-actions">
+            <!-- Navbar Menu Btn -->
+            <div class="nav-bar-menu-btn ms-3">
+              <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+            <!-- /Navbar Menu Btn -->
+          </div>
+          <!-- /Navbar Actions -->
+        </div>
+        <!-- /Navbar Container -->
+      </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Categories Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="categories-list">
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                WordPress
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                PHP Scripts
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                HTML Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                CSS Codes
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Andriod Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                IOS Apps
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="category-item" data-toggle>
+            <div class="category-btn toggle-title">
+              <h6 class="category-item-title">
+                Graphics
+                <div class="category-item-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </h6>
+            </div>
+            <div class="category-menu">
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+              <div class="category-menu-item">
+                <h6 class="category-item-title">
+                  <span class="category-item-icon">
+                    <i class="fas fa-circle"></i>
+                  </span>
+                  Sub Link
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Categories Menu -->
+    <!-- Header -->
+    <header class="header header-item">
+      <div class="container d-flex flex-column flex-grow-1">
+        <div class="header-inner">
+          <div class="pt-5">
+            <nav class="mb-4 small" aria-label="breadcrumb">
+              <ol class="breadcrumb custom" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/search.html">Tools</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Taskade</li>
+              </ol>
+            </nav>
+            <div class="box">
+              <div class="row row-cols-2 justify-content-between align-items-center g-5">
+                <div class="col-12 col-xl-6 col-xxl-6">
+                  <div class="item-single item-xl">
+                    <div class="item-header d-flex align-items-center gap-3 mb-3">
+                      <a href="#" class="item-img flex-shrink-0">
+                        <img src="https://placehold.co/100x100" alt="">
+                      </a>
+                      <div class="flex-grow-1 pb-1">
+                        <div class="item-title">
+                          <a href="#">Taskade</a>
+                          <i class="bi bi-patch-check-fill verify"></i>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="ratings ratings-lg row row-cols-auto flex-nowrap g-1">
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="bi bi-star-fill"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="bi bi-star-fill"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="bi bi-star-fill"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="bi bi-star-fill"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                          </div>
+                          <div class="small text-muted">
+                            5.0 from 
+                            <a href="#" class="text-decoration-underline">5 reviews</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-body mb-4">
+                      <p class="item-text text-muted small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui doloribus iusto voluptates.
+                      </p>
+                      <div class="row row-cols-auto g-2">
+                        <div class="col">
+                          <div class="item-meta">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Updated 22 March, 2025
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="item-meta">
+                            <i class="fa fa-crown me-1"></i>
+                            Free
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="item-meta bg-primary text-white">
+                            <i class="bi bi-star me-1"></i>
+                            Freatured
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-footer">
+                      <div class="item-tags d-flex flex-wrap gap-2">
+                        <a href="#" class="item-tag">
+                          #AI
+                        </a>
+                        <a href="#" class="item-tag">
+                          #Notes
+                        </a>
+                        <a href="#" class="item-tag">
+                          #Organization
+                        </a>
+                        <a href="#" class="item-tag">
+                          #AI
+                        </a>
+                        <a href="#" class="item-tag">
+                          #Notes
+                        </a>
+                        <a href="#" class="item-tag">
+                          #Organization
+                        </a>
+                      </div>
+                      <div class="tool-actions d-flex flex-wrap align-items-center gap-2 mt-3">
+                        <a class="btn btn-outline-primary btn-md flex-grow-1" href="#">
+                          <i class="bi bi-box-arrow-up-right me-1"></i>
+                          Visit Site
+                        </a>
+                        <a class="btn btn-outline-primary btn-md flex-grow-1" href="#">
+                          <i class="bi bi-heart me-1"></i>
+                          200
+                        </a>
+                        <a class="btn btn-outline-primary btn-md flex-grow-1" href="#">
+                          <i class="bi bi-star me-1"></i>
+                          Write a Review
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-6 col-xxl-6 d-none d-xl-block">
+                  <div class="item-img-lg">
+                    <img src="https://placehold.co/900x500" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-tabs mt-3">
+              <a href="tool.html" class="page-tab">
+                <i class="fa-regular fa-circle-question me-1"></i> 
+                <span>Description</span>
+              </a>
+              <a href="tool-reviews.html" class="page-tab current">
+                <i class="fa-regular fa-star me-1"></i>
+                <span>Reviews (5)</span>
+              </a>
+              <a href="tool-comments.html" class="page-tab">
+                <i class="fa-regular fa-comments me-1"></i>
+                <span>Comments (4)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+    <!-- Section -->
+    <section class="section mt-3 py-0">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-body">
+            <div class="item-discussion">
+              <div class="row row-cols-1 justify-content-center flex-xl-nowrap g-3">
+                <div class="col-xl-8 col-xxl-9">
+                  <div class="box p-4 mb-3">
+                    <div class="d-flex align-items-center">
+                      <div class="ratings ratings-lg row row-cols-auto flex-nowrap g-1">
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                      </div>
+                      <span class="small text-muted ms-2">5 out of 5 stars</span>
+                      <a class="btn btn-outline-primary btn-sm ms-auto collapsed" data-bs-toggle="collapse" data-bs-target="#writeReview" aria-expanded="false" aria-controls="collapseWidthExample">
+                        Write a Review
+                      </a>
+                    </div>
+                    <div class="mt-4 collapse" id="writeReview">
+                      <div class="box box-bg p-4">
+                        <h5 class="mb-4">Write a Review</h5>
+                        <form action="">
+                          <!-- Start Ratings -->
+                          <div class="row row-cols-auto flex-nowrap g-1 ratings ratings-lg ratings-selective mb-3">
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <input type="radio" name="ratings">
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <input type="radio" name="ratings">
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <input type="radio" name="ratings">
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <input type="radio" name="ratings">
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <input type="radio" name="ratings">
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                          </div>
+                          <!-- End Ratings -->
+                          <input type="text" class="form-control form-control-md mb-3" placeholder="Subject">
+                          <textarea class="form-control mb-3" rows="5" placeholder="Your Message" auto-size></textarea>
+                          <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary btn-md">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box d-flex flex-column gap-3 p-4">
+                    <!-- Review -->
+                    <div class="box box-bg p-4">
+                        <!-- review title -->
+                        <div class="d-flex justify-content-between align-items-center mb-2"> 
+                            <h5 class="mb-0">Great</h5>
+                            <span class="text-muted small"> 1 Month ago </span>
+                        </div>
+                        <!-- review auther and stars -->
+                        <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+                          <p class="text-muted mb-0">
+                            By: <span class="text-primary fw-medium">Ahmed</span>
+                          </p>
+                          <div class="ratings row row-cols-auto flex-nowrap g-1">
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                          </div>
+                        </div>
+                        <!-- review description -->
+                      <p class="text-muted mb-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non nihil architecto mollitia quod dolores possimus debitis repudiandae unde similique. Suscipit tempora voluptatum eos iure nobis iusto vero quibusdam ex?
+                      </p>
+                    </div>
+                    <!-- /Review -->
+                    <!-- Review -->
+                    <div class="box box-bg p-4">
+                        <!-- review title -->
+                        <div class="d-flex justify-content-between align-items-center mb-2"> 
+                            <h5 class="mb-0">Great</h5>
+                            <span class="text-muted small"> 1 Month ago </span>
+                        </div>
+                        <!-- review auther and stars -->
+                        <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+                          <p class="text-muted mb-0">
+                            By: <span class="text-primary fw-medium">Ahmed</span>
+                          </p>
+                          <div class="ratings row row-cols-auto flex-nowrap g-1">
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                            <!-- Start Rating -->
+                            <div class="col">
+                              <div class="rating rating-active">
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <!-- End Rating -->
+                          </div>
+                        </div>
+                        <!-- review description -->
+                      <p class="text-muted mb-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non nihil architecto mollitia quod dolores possimus debitis repudiandae unde similique. Suscipit tempora voluptatum eos iure nobis iusto vero quibusdam ex?
+                      </p>
+                      <div class="item-review-reply mt-3 pt-3 border-top">
+                        <div class="row row-cols-auto flex-nowrap g-3">
+                          <div class="col d-flex flex-column align-items-center">
+                              <a href="profile.html" class="user-avatar me-0">
+                                  <img src="https://ToolVerse.net/images/profiles/gwpmbk5ezjn4/LIx5BSjKeXrk6v3_1719088931.jpg" alt="Vironeer">
+                              </a>
+                          </div>
+                          <div class="col flex-grow-1 flex-shrink-1">
+                              <div class="row row-cols-auto align-items-center justify-content-between g-2 mb-1">
+                                  <div class="col">
+                                      <a href="profile.html">
+                                          <h6 class="mb-0">CreativeThemes</h6>
+                                      </a>
+                                  </div>
+                                  <div class="col small">
+                                      <p class="text-muted mb-0">
+                                          7 months ago
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="fw-light">
+                                  tthanks
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Review -->
+                  </div>
+                </div>
+                <div class="col-xl-4 col-xxl-3">
+                  <div class="box p-4">
+                    <img class="tool-featured-img mb-3" src="https://placehold.co/225x65" alt="">
+                    <textarea id="embedCode" class="form-control mb-3" auto-size="" readonly="" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 224px;">&lt;a href="https://www.ToolVerse.com/tool/taskade" style="width: 250px; height: 54px;" width="250" height="54"&gt;&lt;img src="https://www.ToolVerse.com/" alt="Taskade | Featured on ToolVerse" style="width: 250px; height: 54px;" width="250" height="54" /&gt;&lt;/a&gt;</textarea>
+                    <button class="btn btn-primary btn-md btn-copy w-100" data-clipboard-target="#embedCode">
+                      <i class="bi bi-copy me-1"></i>
+                      Copy Embed Code
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="row row-cols-1 row-cols-xl-auto justify-content-between align-items-center g-3">
+            <div class="col-xl-6">
+              <h2 class="section-title custom-title mb-0">Similar Tools</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3">
+            <div class="col">
+              <div class="item box h-100">
+                <div class="item-header d-flex align-items-center gap-3 mb-3">
+                  <a href="#" class="item-img flex-shrink-0">
+                    <img src="https://placehold.co/100x100" alt="">
+                  </a>
+                  <div class="flex-grow-1 pb-1">
+                    <div class="item-title mb-1">
+                      <a href="#">Taskade</a>
+                      <i class="bi bi-patch-check-fill verify"></i>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="ratings row row-cols-auto flex-nowrap g-1">
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                      </div>
+                      <div class="small text-muted">(2,000)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-body">
+                  <div class="row row-cols-auto justify-content-between align-items-center g-2 mb-2">
+                    <div class="col">
+                      <h6 class="mb-0">Free</h6>
+                    </div>
+                    <div class="col">
+                      <div class="tool-action">
+                        <span class="small text-muted">200</span>
+                        <button class="btn btn-reset text-primary">
+                          <i class="bi bi-heart-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="item-text text-muted small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui doloribus iusto voluptates.
+                  </p>
+                </div>
+                <div class="item-footer">
+                  <div class="item-tags d-flex flex-wrap gap-2">
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                  </div>
+                  <div class="tool-actions d-flex align-items-center justify-content-between gap-2 mt-3">
+                    <p class="mb-0">
+                      <i class="bi bi-star-fill text-primary me-1"></i>
+                      <span class="text-muted">Featured</span>
+                    </p>
+                    <a class="btn btn-outline-primary" href="#">
+                      <i class="bi bi-box-arrow-up-right me-1"></i>
+                      Visit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item box h-100">
+                <div class="item-header d-flex align-items-center gap-3 mb-3">
+                  <a href="#" class="item-img flex-shrink-0">
+                    <img src="https://placehold.co/100x100" alt="">
+                  </a>
+                  <div class="flex-grow-1 pb-1">
+                    <div class="item-title mb-1">
+                      <a href="#">Taskade</a>
+                      <i class="bi bi-patch-check-fill verify"></i>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="ratings row row-cols-auto flex-nowrap g-1">
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                      </div>
+                      <div class="small text-muted">(2,000)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-body">
+                  <div class="row row-cols-auto justify-content-between align-items-center g-2 mb-2">
+                    <div class="col">
+                      <h6 class="mb-0">Free</h6>
+                    </div>
+                    <div class="col">
+                      <div class="tool-action">
+                        <span class="small text-muted">200</span>
+                        <button class="btn btn-reset text-primary">
+                          <i class="bi bi-heart-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="item-text text-muted small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui doloribus iusto voluptates.
+                  </p>
+                </div>
+                <div class="item-footer">
+                  <div class="item-tags d-flex flex-wrap gap-2">
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                  </div>
+                  <div class="tool-actions d-flex align-items-center justify-content-between gap-2 mt-3">
+                    <p class="mb-0">
+                      <i class="bi bi-star-fill text-primary me-1"></i>
+                      <span class="text-muted">Featured</span>
+                    </p>
+                    <a class="btn btn-outline-primary" href="#">
+                      <i class="bi bi-box-arrow-up-right me-1"></i>
+                      Visit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item box h-100">
+                <div class="item-header d-flex align-items-center gap-3 mb-3">
+                  <a href="#" class="item-img flex-shrink-0">
+                    <img src="https://placehold.co/100x100" alt="">
+                  </a>
+                  <div class="flex-grow-1 pb-1">
+                    <div class="item-title mb-1">
+                      <a href="#">Taskade</a>
+                      <i class="bi bi-patch-check-fill verify"></i>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="ratings row row-cols-auto flex-nowrap g-1">
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                      </div>
+                      <div class="small text-muted">(2,000)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-body">
+                  <div class="row row-cols-auto justify-content-between align-items-center g-2 mb-2">
+                    <div class="col">
+                      <h6 class="mb-0">Free</h6>
+                    </div>
+                    <div class="col">
+                      <div class="tool-action">
+                        <span class="small text-muted">200</span>
+                        <button class="btn btn-reset text-primary">
+                          <i class="bi bi-heart-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="item-text text-muted small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui doloribus iusto voluptates.
+                  </p>
+                </div>
+                <div class="item-footer">
+                  <div class="item-tags d-flex flex-wrap gap-2">
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                  </div>
+                  <div class="tool-actions d-flex align-items-center justify-content-between gap-2 mt-3">
+                    <p class="mb-0">
+                      <i class="bi bi-star-fill text-primary me-1"></i>
+                      <span class="text-muted">Featured</span>
+                    </p>
+                    <a class="btn btn-outline-primary" href="#">
+                      <i class="bi bi-box-arrow-up-right me-1"></i>
+                      Visit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item box h-100">
+                <div class="item-header d-flex align-items-center gap-3 mb-3">
+                  <a href="#" class="item-img flex-shrink-0">
+                    <img src="https://placehold.co/100x100" alt="">
+                  </a>
+                  <div class="flex-grow-1 pb-1">
+                    <div class="item-title mb-1">
+                      <a href="#">Taskade</a>
+                      <i class="bi bi-patch-check-fill verify"></i>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="ratings row row-cols-auto flex-nowrap g-1">
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating rating-active">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                        <!-- Start Rating -->
+                        <div class="col">
+                          <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <!-- End Rating -->
+                      </div>
+                      <div class="small text-muted">(2,000)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-body">
+                  <div class="row row-cols-auto justify-content-between align-items-center g-2 mb-2">
+                    <div class="col">
+                      <h6 class="mb-0">Free</h6>
+                    </div>
+                    <div class="col">
+                      <div class="tool-action">
+                        <span class="small text-muted">200</span>
+                        <button class="btn btn-reset text-primary">
+                          <i class="bi bi-heart-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="item-text text-muted small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui doloribus iusto voluptates.
+                  </p>
+                </div>
+                <div class="item-footer">
+                  <div class="item-tags d-flex flex-wrap gap-2">
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                    <a href="#" class="item-tag">
+                      #AI
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Notes
+                    </a>
+                    <a href="#" class="item-tag">
+                      #Organization
+                    </a>
+                  </div>
+                  <div class="tool-actions d-flex align-items-center justify-content-between gap-2 mt-3">
+                    <p class="mb-0">
+                      <i class="bi bi-star-fill text-primary me-1"></i>
+                      <span class="text-muted">Featured</span>
+                    </p>
+                    <a class="btn btn-outline-primary" href="#">
+                      <i class="bi bi-box-arrow-up-right me-1"></i>
+                      Visit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Section -->
+    <section class="section section-subscribe">
+      <div class="container container-custom">
+        <div class="section-inner">
+          <div class="section-body">
+            <div class="subscribe">
+              <div class="row g-3">
+                <div class="col-12 col-md-7">
+                  <h2 class="subscribe-title" data-aos="fade-up" data-aos-duration="1000">
+                    Subscribe to Our Newsletter
+                  </h2>
+                  <p class="subscribe-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    Stay tuned for the latest and greatest items and offers, delivered right to your inbox!
+                  </p>
+                  <div class="input-group input-group-absolute" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Username" aria-describedby="input-group-button-right">
+                    <button type="button" class="btn btn-primary btn-md" id="input-group-button-right">
+                      Subscribe
+                      <i class="bi bi-send-fill ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section -->
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer Upper -->
+      <div class="footer-upper">
+        <div class="container container-custom">
+          <div class="row g-5">
+            <div class="col-12 col-lg-5">
+              <a href="#" class="logo h3 mb-4 fw-700" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/logo-light.svg" alt="ToolVerse" />
+              </a>
+              <p class="footer-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis voluptatem
+                sed doloremque ipsam eius perspiciatis, repellendus, odit, voluptates iusto
+                reprehenderit ipsa qui! Quaerat deleniti, numquam odio ad amet nihil.
+              </p>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <h6>Follow Us:</h6>
+                <div class="socials">
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="#" class="social-btn">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="row row-cols-auto align-items-center g-4">
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">4,321</p>
+                      <h6 class="footer-counter-title">Items Sold</h6>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-counter">
+                      <p class="footer-counter-text">$7,654,352</p>
+                      <h6 class="footer-counter-title">Authors Earnings</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="col-12 col-lg-7">
+              <div class="row row-cols-2 row-cols-sm-3 g-5">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Company</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="/" class="footer-text">
+                        Home
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Blog
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Contact Us
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Informations</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Partners
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Pricing
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Reviews
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        API
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <!-- Footer Title -->
+                  <div class="footer-title">
+                    <span class="h5">Other</span>
+                  </div>
+                  <!-- /Footer Title -->
+                  <ul class="footer-links list-unstyled mb-0">
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        Terms of Use
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                    <!-- Navbar Link -->
+                    <li class="footer-link">
+                      <a href="#" class="footer-text">
+                        DMCA
+                      </a>
+                    </li>
+                    <!-- /Navbar Link -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Upper -->
+      <!-- Footer Lower -->
+      <div class="footer-lower">
+        <div class="container container-custom">
+          <div class="row row-cols-1 row-cols-sm-auto align-items-center justify-content-between g-3">
+            <div class="col">
+              <!-- Footer Copyright -->
+              <p class="footer-copyright small mb-0">
+                Copyrights @ <span data-year="">2025</span>. Made With ❤️ By Mohamed Abdelqader & Sohaila Mohamed
+              </p>
+              <!-- /Footer Copyright -->
+            </div>
+            <div class="col">
+              <div class="footer-payment">
+                <img src="assets/img/payments/payments.png" alt="payments">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Footer Lower -->
+    </footer>
+    <!-- /Footer -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/autosize.min.js"></script>
+    <script src="assets/js/vendor/clipboard.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
